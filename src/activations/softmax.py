@@ -1,6 +1,6 @@
 import numpy as np
 
-class Activation_Softmax:
+class Softmax:
 
     def __init__(self):
         self.input = None
@@ -12,3 +12,7 @@ class Activation_Softmax:
         probabilities = exp_values / np.sum(exp_values, axis=1,keepdims=True)
         self.output = probabilities
         return self.output
+    
+    def backward(self, dvalues):
+        # very complex !
+        pass

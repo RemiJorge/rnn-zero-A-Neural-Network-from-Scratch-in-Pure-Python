@@ -10,3 +10,8 @@ class ReLU:
         self.input = input_data
         self.output = np.maximum(0, input_data)
         return self.output
+    
+    def backward(self, dvalues):
+        self.dinputs = dvalues.copy()
+        self.dinputs[self.inputs <= 0] = 0
+        return self.dinputs

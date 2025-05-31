@@ -24,14 +24,8 @@ class DenseLayer:
         self.output = np.dot(input_data, self.weights) + self.biases
         return self.output
 
-    def backward(self, output_gradient):
-        weights_gradient = np.dot(self.input.T, output_gradient)
-        biases_gradient = np.sum(output_gradient, axis=0, keepdims=True)
-        input_gradient = np.dot(output_gradient, self.weights.T)
-
-        # Update weights and biases using gradients (this is a simple example; in practice, you would use an optimizer)
-        learning_rate = 0.01
-        self.weights -= learning_rate * weights_gradient
-        self.biases -= learning_rate * biases_gradient
-
-        return input_gradient
+    def backward(self, dvalues):
+        self.dweights = np.dot(self.inputs.T, dvalues)
+        self.dbiases = np.sum(dvalues, axis=0, keepdims=True)
+        self.dinputs = np.dot(dvalues, self.weights.T)
+        return self.dinputs
