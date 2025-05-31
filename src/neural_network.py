@@ -1,15 +1,15 @@
-from activations.relu import ReLU
-from activations.softmax import Softmax
+from src.activations.relu import ReLU
+from src.activations.softmax import Softmax
 
-from layers.dense_layer import DenseLayer
+from src.layers.dense_layer import DenseLayer
 
-from optimizers.adagrad import Optimizer_Adagrad
-from optimizers.adam import Optimizer_Adam
-from optimizers.gradient import Optimizer_SGD
-from optimizers.rmsprop import Optimizer_RMSprop
+from src.optimizers.adagrad import Optimizer_Adagrad
+from src.optimizers.adam import Optimizer_Adam
+from src.optimizers.gradient import Optimizer_SGD
+from src.optimizers.rmsprop import Optimizer_RMSprop
 
-from validations.softmax_crossentropy import SoftmaxCrossentropy
-from validations.accuracy import Accuracy
+from src.validations.softmax_crossentropy import SoftmaxCrossentropy
+from src.validations.accuracy import Accuracy
 
 
 class NeuralNetwork:

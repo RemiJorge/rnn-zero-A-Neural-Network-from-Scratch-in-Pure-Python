@@ -1,6 +1,6 @@
 import numpy as np
-from activations.softmax import Softmax
-from validations.crossentropy import Crossentropy
+from src.activations.softmax import Softmax
+from src.validations.crossentropy import Crossentropy
 
 class SoftmaxCrossentropy:
 
