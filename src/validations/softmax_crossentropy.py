@@ -7,11 +7,12 @@ class SoftmaxCrossentropy:
     def __init__(self):
         self.activation = Softmax()
         self.loss = Crossentropy()
+        self.outputs = None
 
     def forward(self, inputs, y_true):
         self.activation.forward(inputs)
-        self.output = self.activation.output
-        return self.loss.calculate(self.output, y_true)
+        self.outputs = self.activation.output
+        return self.loss.calculate(self.outputs, y_true)
 
     def backward(self, dvalues, y_true):
 
