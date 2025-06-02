@@ -87,3 +87,4 @@ class NeuralNetwork:
 
     def get_current_learning_rate(self):
         return self.optimizer.current_learning_rate
+    
