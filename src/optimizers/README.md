@@ -1,5 +1,7 @@
 # Optimization Algorithms
 
+**[Back](../../README.md)**
+
 ## Overview
 
 This module implements several foundational **gradient-based optimization algorithms** designed to update the trainable parameters of neural networks efficiently during backpropagation. All optimizers are implemented **from scratch using NumPy**, enabling complete transparency and control over the optimization dynamics.
