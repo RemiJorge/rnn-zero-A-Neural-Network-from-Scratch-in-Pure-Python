@@ -1,5 +1,7 @@
 # Layer Module
 
+**[Back](../../README.md)**
+
 ## Overview
 
 This directory implements the **core layer abstractions** of a fully-connected feedforward neural network, developed entirely from scratch using only NumPy. The foundational building block currently included is the `DenseLayer` (also known as a fully connected layer). Future extensions to this module will include layers such as `Dropout` to support regularization techniques.
