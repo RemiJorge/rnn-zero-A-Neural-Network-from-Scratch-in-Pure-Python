@@ -8,9 +8,10 @@ This repository demonstrates the inner workings of neural networks **without usi
 
 ## 🌲 Repository Structure
 
+```
 .
 ├── example.ipynb               # Example: simple training on toy dataset
-├── neural\_network.py           # NeuralNetwork class: high-level training API
+├── neural\_network.py          # NeuralNetwork class: high-level training API
 ├── requirements.txt            # Required Python packages
 ├── src/
 │   ├── activations/            # Activation functions (ReLU, Softmax)
@@ -18,7 +19,7 @@ This repository demonstrates the inner workings of neural networks **without usi
 │   ├── optimizers/             # Optimizers (SGD, Adam, RMSprop, Adagrad)
 │   └── validations/            # Accuracy and loss computations
 └── README.md                   # Main project README
-
+```
 
 ---
 
