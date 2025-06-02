@@ -1,5 +1,7 @@
 # Activation Functions Module
 
+**[Back](../../README.md)**
+
 ## Overview
 
 This directory contains implementations of **activation functions** used in neural networks. Activation functions introduce non-linearity, allowing the network to approximate complex functions and learn meaningful patterns beyond linear transformations. 
